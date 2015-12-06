@@ -1,0 +1,25 @@
+{
+  "name": "ggpullr",
+  "version": "0.0.1",
+  "description": "Git pull shortcut with rebase that automatically infers the current branch",
+  "author": "John Otander <johnotander@gmail.com> (http://johnotander.com/)",
+  "repository": "johnotander/ggpullr",
+  "license": "MIT",
+  "bin": "ggpullr.sh",
+  "files": [
+    "ggpullr.sh"
+  ],
+  "keywords": [
+    "cli-app",
+    "git",
+    "pull",
+    "ggpullr",
+    "sh"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "git-current-branch": "^1.0.3"
+  }
+}
