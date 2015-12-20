@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-git pull origin $(/usr/local/lib/node_modules/ggpullr/node_modules/.bin/git-current-branch) --rebase
+currBranch=$(eval "$(node -e "var path = require('path');console.log(path.join(path.dirname(require('fs').realpathSync('$0')), 'node_modules/.bin/git-current-branch'))")")
+git pull origin $currBranch --rebase
